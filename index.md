@@ -13,7 +13,7 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** --->
 
-![Headstone Image](logo.svg)
+<!---![Headstone Image](logo.svg)--->
   
  <!--- # Final Milestone
 
@@ -57,11 +57,11 @@ For your first milestone, describe what your project is and how you plan to buil
 ---> 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+<!---Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. --->
 
-![Headstone Image](logo.svg)
+![Headstone Image](robotic-arm.png)
 
-# Code
+<!--- # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
@@ -76,6 +76,7 @@ void loop() {
 
 }
 ```
+--->
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
@@ -83,9 +84,15 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Nano | Managing and controlling the robot’s components | $24.90 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Bluetooth Module | Sending and processing signals between the app and the Arduinor | $7.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| SG90 Servos | Moving the joints and wooden components | $16.95 | <a href=""> Link </a> |
+| MG90 Servo | Moving the base | $10.99 | <a href=""> Link </a> |
+| Batteries | Powering the Arduino and Bluetooth Module | $6.58 | <a href=""> Link </a> |
+| JST Battery Connectors | Connect the batteries to the circuit’s battery pin | $8.99 | <a href=""> Link </a> |
+| Battery Clips | Hold the batteries to flow its current into the JST connectors | $5.99 | <a href=""> Link </a> |
+| Female to Female Connectors | Connecting the Arduino to the wired controller | $6.98 | <a href=""> Link </a> |
+| Joysticks | Allow the user to control the robot using a controller | $9.95 | <a href=""> Link </a> |
 
 # Starter Milestone
 
@@ -95,10 +102,11 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 For my starter project, I chose the BlueStamp Arduino Starter. I have had prior experiences with Arduinos in CS classes I have taken at school, but those have been very software heavy, rather than mechanical or electrical heavy. By choosing this starter, I hoped to gain more knowledge on circuits and Arduinos as a whole since my final project uses them as well, and it would be productive to get familiar with how to build and manage Arduino boards. The board has an input, the button, and an output, the LED. When the button is pressed, a message (taken from the code) is transferred throughout the jumper wires and to the Arduino, which is then passed on to the LED which tells it to turn on, until the button is released which severs the connection. The voltage transmission is regulated and controlled by the resistor which is able to  limit the voltage being passed throughout the circuit so it is not too little or too much. Some challenges I faced was mounting the proto-sheild onto the Arduino board since the intructions were a bit complicated, and having to solder the two boards together was also a challenge due to the limited space and my limited skill set with soldering. There were also some struggles with the circuit connection between the button and LED. However, after going through each step carefully and thoroughly, I was able to pinpoint the exact problem and where it was coming from, and then able to solve any issues I had. Now that this project is completed, and I have a better understanding of Arduino boards and circuits, I can now start on my final project!
 
-# Other Resources/Examples
+<!--- # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.
+--->
