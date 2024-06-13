@@ -15,7 +15,7 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 <!---![Headstone Image](logo.svg)--->
   
- <!--- # Final Milestone
+<!--- # Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -25,8 +25,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE --->
-
+- What you hope to learn in the future after everything you've learned at BSE -->
 
 
 <!--- # Second Milestone
