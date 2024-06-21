@@ -26,18 +26,14 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you hope to learn in the future after everything you've learned at BSE -->
 
 
-<!--- # Second Milestone
+# Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!---**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-cU3qCOhc94?si=2KmhIF64Ce1ipdxn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
---->
+For my main project, my second milestone was to program the joystick controller to be compatible with my robotic arm. Using code functions from the Servo library, the controller is able to manipulate the movement of the servos positions and set it to a specific rotation point based on how much the joystick is pushed forward/backwards. The servo wires that are connected to the Arduino help the computer read which servo should be moved according to which joystick is moved. The battery ensures that enough voltage is moving through the entire circuit so the robotic arm has enough energy to move freely without having jittery movements. There were a significant amount of challenges during this process, including issues in the electrical, mechnical, software, and power areas. When the provided code was uploaded, the robotic arm would go haywire and move entirely on its own without any prompting from the controller. We hoped that this meant it was a software issue, and rewrote the code from scratch to have a simpler way to control the arm. However, when that wasn't enough, we tried to isolate the movement of each individual servo to check if there were any faulty or broken ones that were attached. We found that servo 2 was broken, and replaced it with another servo, yet that one was also considerably weak and could not support the weight of the upper arm, and ended uo replacing it a second time before it finally worked. There were also issues with loose jumper wires, which meant replacing and reiterating the wiring for both the servos and the joycon. There was also issues with the battery pack, due to it being plugged in for extensive periods of time, the voltage considerably lowered and became very weak, which meant replacing the batteries as well and being mindul of how long it is being used. While there were issues in each of these categories, eventually I was able to power through these challenges and create a working controller for my robotic arm. My next steps are to code the app which will also be able to control the robotic arm.
+
 
 # First Milestone
 
@@ -53,22 +49,77 @@ For my main project, my first milestone was to assemble and build the components
 
 ![Headstone Image](robotic-arm.png)
 
-<!--- # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+# Code
+<!---Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
+#include <Servo.h>
+
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+
+int servoAng1, servoAng2, servoAng3, servoAng4;
+
+void setup () {
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  servo1.attach(5);  //Set the servo control pin as D4
+  servo2.attach(6);  //Set the servo control pin as D5
+  servo3.attach(7);  //Set the servo control pin as D6
+  servo4.attach(10);  //Set the servo control pin as D7
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+int data_processing(int x) {
+  if (x < 0) {
+    x = 0;
+  } 
+  if (x > 180) {
+    x = 180;
+  }
 
+  return x;
+}
+
+int joystick (int reading) {
+  reading = (reading / 100) - 5;
+
+  if (reading > -2 && reading < 0) {
+    reading = 0;
+  }
+
+  return reading;
+}
+
+void loop () {
+  int xL = joystick(analogRead(A0));
+  int yL = joystick(analogRead(A1));
+  int xR = joystick(analogRead(A2));
+  int yR = joystick(analogRead(A3));
+
+
+  servoAng1 += xL;
+  servoAng2 += yL;
+  servoAng3 += xR;
+  servoAng4 += yR;
+
+  servo1.write(servoAng1);
+  servo2.write(servoAng2);
+  servo3.write(servoAng3);
+  servo4.write(servoAng4);
+
+  servoAng1 = data_processing(servoAng1);
+  Serial.println(servo1.read());
+  servoAng2 = data_processing(servoAng2);
+  Serial.println(servo2.read()); 
+  servoAng3 = data_processing(servoAng3);
+  Serial.println(servo3.read());
+  servoAng4 = data_processing(servoAng4);
+  Serial.println(servo4.read());
+
+  delay(50);
 }
 ```
---->
 
 # Bill of Materials
 <!---Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
