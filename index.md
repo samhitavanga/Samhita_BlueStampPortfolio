@@ -13,17 +13,20 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 ![Headstone Image](Samhita_V.heic) 
   
-<!--- # Final Milestone
+# Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!---**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE -->
+## Description
+This Android app  for the robotic arm consists of a two-way button interface that controls 3 points of movement on the arm (the base, the joints, and the claw) and also has a reset button that reconfigures all servos to its base rotation point of 90 degrees. On the MIT App Interface, I was able to set and configure different buttons to control and maintain points of movement on the arm to make it more user friendly. For the block code, I made it so that when a button is pressed for a certain servo movement type, a number is returned. In the Arduino code, I made sure to configure the precise movements of the servos based on whatever number was outputted so that the Arduino could understand how to move the servo based on outputs from the phone. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends.  
+
+## Challenges
+There were many challenges during this process. I created and tested 4 different app interfaces with 4 different types of code before I was able to settle on something that was compatible with the arm. For example, one of my earlier interfaces used sliders instead of buttons, however, using the sliders was relatively harder for the arm to read and wasn’t able to precisely control the movements therefore wasting power in the process. Because of this, the app would freeze up, shut down, or cause the bluetooth module to disconnect frequently causing multiple errors. To solve this, I switched to using buttons in the new interface, as well as combining the points of movement from 4 to 3 to make it simpler to move. I also switched out the batteries since the earlier interfaces were draining its voltage. Eventually, I was able to get the app working and now it pairs smoothly with the robotic arm.
+
+## Next Steps
+My next steps are to research and start working on my modifications.
 
 
 # Second Milestone
@@ -32,6 +35,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-cU3qCOhc94?si=2KmhIF64Ce1ipdxn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Description
 For my main project, my second milestone was to program the joystick controller to be compatible with my robotic arm. Using code functions from the Servo library, the controller is able to manipulate the movement of the servos positions and set it to a specific rotation point based on how much the joystick is pushed forward/backwards. The servo wires that are connected to the Arduino help the computer read which servo should be moved according to which joystick is moved. The battery ensures that enough voltage is moving through the entire circuit so the robotic arm has enough energy to move freely without having jittery movements. 
 
 ## Challenges
@@ -47,6 +51,7 @@ My next steps are to code the app which will also be able to control the robotic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HHfXIwpPmhg?si=Wacx0CLeuHc3H47H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Description
 For my main project, my first milestone was to assemble and build the components of my robotic arm, which includes the structure of the arm itself and the 2-joystick controller. I chose this project primarily because of its significance and symbolism of the many advancements in the robotics field and its usefulness in medical areas. These inventions have been influential to so many people and I wanted to experience what it would be like to create a simpler version of a prosthetic arm. This project is also the perfect difficulty level as it is not too hard but enough to challenge me in the right areas and expand my skill set. There are three main components to this project: the battery pack, the Arduino Nano board, and the structure of the arm itself. The battery pack is used to power the arm since it cannot function from the power provided by the computer alone. The Arduino Nano board is what facilitates communication between the computer and the arm + controller, which is how the arm is able to read code and able to move specific joints based on commands from the controller. The robotic arm has 4 main points of movement: the turning table on the bottom, the two joints on the arm, and the opening/closing of the claw at the top. 
 
 ## Challenges
