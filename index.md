@@ -10,6 +10,8 @@ This robotic arm has the ability to flex and grab objects around it using the he
 | Samhita V | Mountain View High School | CS/AI | Incoming Junior
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** --->
+
+![Headstone Image](Samhita_V.png)
   
 # Final Milestone
 
