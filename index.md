@@ -71,6 +71,7 @@ Schematics drawn by Cokoino (github link: https://github.com/Cokoino/CKK0006)
 <!---Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
 
 ```c++
+<pre style="background:#fdfdfd; border:none; height:40pc">
 #include <Servo.h>
 
 Servo servo1;
@@ -137,12 +138,14 @@ void loop () {
 
   delay(50);
 }
+</pre>
 ```
 # App Block Code
 ![Headstone Image](app-block.png)
 
 # App Arduino Code
 ```c++
+<pre style="background:#fdfdfd; border:none; height:40pc">
 #include "CokoinoArm.h"
 #include <SoftwareSerial.h>
 #define buzzerPin 9
@@ -312,6 +315,7 @@ void loop() {
   C_action();
   Do_action();
 }
+</pre>
 ```
 
 # Bill of Materials
