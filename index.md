@@ -139,7 +139,7 @@ void loop () {
   delay(50);
 }
 ```
-</pre>
+  </pre>
 
 # App Block Code
 ![Headstone Image](app-block.png)
@@ -317,7 +317,7 @@ void loop() {
   Do_action();
 }
 ```
-</pre>
+  </pre>
 
 # Bill of Materials
 <!---Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
