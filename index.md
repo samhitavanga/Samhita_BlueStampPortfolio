@@ -17,7 +17,7 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 <!---**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tDY5gV5Dqng?si=A2Im4wSLJ2qfaZ2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Description
 This Android app  for the robotic arm consists of a two-way button interface that controls 3 points of movement on the arm (the base, the joints, and the claw) and also has a reset button that reconfigures all servos to its base rotation point of 90 degrees. On the MIT App Interface, I was able to set and configure different buttons to control and maintain points of movement on the arm to make it more user friendly. For the block code, I made it so that when a button is pressed for a certain servo movement type, a number is returned. In the Arduino code, I made sure to configure the precise movements of the servos based on whatever number was outputted so that the Arduino could understand how to move the servo based on outputs from the phone. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends.  
