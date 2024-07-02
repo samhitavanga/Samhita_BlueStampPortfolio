@@ -144,7 +144,7 @@ void loop () {
 ![Headstone Image](app-block.png)
 
 # App Arduino Code
-<pre style="background:#fdfdfd; border:none; height:40pc">
+```c++
 #include "CokoinoArm.h"
 #include <SoftwareSerial.h>
 #define buzzerPin 9
@@ -314,7 +314,7 @@ void loop() {
   C_action();
   Do_action();
 }
-</pre>
+```
 
 # Bill of Materials
 <!---Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
