@@ -158,10 +158,10 @@ void loop () {
 }
 ```
 
-# App Block Code
+# Arm App Block Code
 ![Headstone Image](app-block.png)
 
-# App Arduino Code
+# Arm App Arduino Code
 ```c++
 #include "CokoinoArm.h"
 #include <SoftwareSerial.h>
