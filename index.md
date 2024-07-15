@@ -12,7 +12,23 @@ This robotic arm has the ability to flex and grab objects around it using the he
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** --->
 <img src="Samhita_V.png" width="220" height="300">
 
-  
+
+# Modification Milestone
+
+<!---**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/19wswcDkdlk?si=O6AnUX2gXe8izzf1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Description
+This Android app for the robotic arm uses a switch system and an orientation sensor to control the arm based on the physical movement of the phone. When a switch for a particular servo/point of movement is enabled, a number is returned and sent to the Bluetooth module, which is then read by the code. Based on the number read, the code will tell the arm which servo will be receiving instructions for movement, and also how to move the servo based on the phone’s tilt/angle. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends. 
+
+## Challenges
+There were a significant amount of challenges during this process. I created and tested two different interfaces with different coding approaches before I was able to find something that worked with the arm. For example, in the beginning, there were no switches made and I expected all the servos to run at once while the phone is moving. This caused an overload in data and caused the arm to have jittery movements that burned out the power in the batteries. To solve this, I used switches to have precise movements that the user can predict and control. There was also a debate between whether or not I should use an orientation sensor over an accelerometer. Eventually, I weighed the pros and cons based on my needs and settled on the orientation sensor, which would give my code the data it needs to fully control the arm. Eventually, I was able to get the app working and now it works and pairs smoothly with the robotic arm.
+
+## Next Steps
+My next steps are to practice my presentation for Demo Night.
+
+
 # Final Milestone
 
 <!---**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
@@ -20,7 +36,7 @@ This robotic arm has the ability to flex and grab objects around it using the he
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tDY5gV5Dqng?si=A2Im4wSLJ2qfaZ2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Description
-This Android app  for the robotic arm consists of a two-way button interface that controls 3 points of movement on the arm (the base, the joints, and the claw) and also has a reset button that reconfigures all servos to its base rotation point of 90 degrees. On the MIT App Interface, I was able to set and configure different buttons to control and maintain points of movement on the arm to make it more user friendly. For the block code, I made it so that when a button is pressed for a certain servo movement type, a number is returned. In the Arduino code, I made sure to configure the precise movements of the servos based on whatever number was outputted so that the Arduino could understand how to move the servo based on outputs from the phone. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends. 
+This Android app for the robotic arm consists of a two-way button interface that controls 3 points of movement on the arm (the base, the joints, and the claw) and also has a reset button that reconfigures all servos to its base rotation point of 90 degrees. On the MIT App Interface, I was able to set and configure different buttons to control and maintain points of movement on the arm to make it more user friendly. For the block code, I made it so that when a button is pressed for a certain servo movement type, a number is returned. In the Arduino code, I made sure to configure the precise movements of the servos based on whatever number was outputted so that the Arduino could understand how to move the servo based on outputs from the phone. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends. 
 
 ## Challenges
 There were many challenges during this process. I created and tested 4 different app interfaces with 4 different types of code before I was able to settle on something that was compatible with the arm. For example, one of my earlier interfaces used sliders instead of buttons, however, using the sliders was relatively harder for the arm to read and wasn’t able to precisely control the movements therefore wasting power in the process. Because of this, the app would freeze up, shut down, or cause the bluetooth module to disconnect frequently causing multiple errors. To solve this, I switched to using buttons in the new interface, as well as combining the points of movement from 4 to 3 to make it simpler to move. I also switched out the batteries since the earlier interfaces were draining its voltage. Eventually, I was able to get the app working and now it pairs smoothly with the robotic arm.
