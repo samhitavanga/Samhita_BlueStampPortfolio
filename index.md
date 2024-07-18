@@ -19,10 +19,10 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/19wswcDkdlk?si=O6AnUX2gXe8izzf1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Description
+### Description
 This Android app for the robotic arm uses a switch system and an orientation sensor to control the arm based on the physical movement of the phone. When a switch for a particular servo/point of movement is enabled, a number is returned and sent to the Bluetooth module, which is then read by the code. Based on the number read, the code will tell the arm which servo will be receiving instructions for movement, and also how to move the servo based on the phone’s tilt/angle. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends. 
 
-## Challenges
+### Challenges
 There were a significant amount of challenges during this process. I created and tested two different interfaces with different coding approaches before I was able to find something that worked with the arm. For example, in the beginning, there were no switches made and I expected all the servos to run at once while the phone is moving. This caused an overload in data and caused the arm to have jittery movements that burned out the power in the batteries. To solve this, I used switches to have precise movements that the user can predict and control. There was also a debate between whether or not I should use an orientation sensor over an accelerometer. Eventually, I weighed the pros and cons based on my needs and settled on the orientation sensor, which would give my code the data it needs to fully control the arm. Eventually, I was able to get the app working and now it works and pairs smoothly with the robotic arm.
 
 ## Next Steps
