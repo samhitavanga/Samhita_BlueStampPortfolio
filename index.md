@@ -32,6 +32,7 @@ My next steps are to practice my presentation for Demo Night.
 
 # Mod Arm App Block Code
 ![Headstone Image](ModBlockCode.png)
+**_Figure # Block Code Iteration #2_**
 
 # Mod Arm App Arduino Code
 ```c++
@@ -278,6 +279,7 @@ My next steps are to research and start working on my modifications.
 
 # Arm App Block Code
 ![Headstone Image](app-block.png)
+**_Figure # Block Code Iteration #1_**
 
 # Arm App Arduino Code
 ```c++
@@ -454,7 +456,7 @@ void loop() {
 
 # Arm App Code Flowchart
 ![Headstone Image](flowchart1.png)
-
+**_Figure # Flowchart_**
 
 # Second Milestone
 
@@ -567,7 +569,7 @@ Schematics drawn by [**Cokoino**](https://github.com/Cokoino/CKK0006)
 
 ![Headstone Image](robotic-arm.png)
 
-**Figure # Servo/Joycon Wiring Diagram**
+**_Figure # Servo/Joycon Wiring Diagram_**
 
 
 # Bill of Materials
