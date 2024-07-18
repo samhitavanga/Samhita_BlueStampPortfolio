@@ -35,13 +35,13 @@ My next steps are to practice my presentation for Demo Night.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tDY5gV5Dqng?si=A2Im4wSLJ2qfaZ2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Description
+### Description
 This Android app for the robotic arm consists of a two-way button interface that controls 3 points of movement on the arm (the base, the joints, and the claw) and also has a reset button that reconfigures all servos to its base rotation point of 90 degrees. On the MIT App Interface, I was able to set and configure different buttons to control and maintain points of movement on the arm to make it more user friendly. For the block code, I made it so that when a button is pressed for a certain servo movement type, a number is returned. In the Arduino code, I made sure to configure the precise movements of the servos based on whatever number was outputted so that the Arduino could understand how to move the servo based on outputs from the phone. The bluetooth module facilitates this connection between the phone and the Arduino and allows for the code to be read from both ends. 
 
-## Challenges
+### Challenges
 There were many challenges during this process. I created and tested 4 different app interfaces with 4 different types of code before I was able to settle on something that was compatible with the arm. For example, one of my earlier interfaces used sliders instead of buttons, however, using the sliders was relatively harder for the arm to read and wasn’t able to precisely control the movements therefore wasting power in the process. Because of this, the app would freeze up, shut down, or cause the bluetooth module to disconnect frequently causing multiple errors. To solve this, I switched to using buttons in the new interface, as well as combining the points of movement from 4 to 3 to make it simpler to move. I also switched out the batteries since the earlier interfaces were draining its voltage. Eventually, I was able to get the app working and now it pairs smoothly with the robotic arm.
 
-## Next Steps
+### Next Steps
 My next steps are to research and start working on my modifications.
 
 
@@ -51,13 +51,13 @@ My next steps are to research and start working on my modifications.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-cU3qCOhc94?si=2KmhIF64Ce1ipdxn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Description
+### Description
 For my main project, my second milestone was to program the joystick controller to be compatible with my robotic arm. Using code functions from the Servo library, the controller is able to manipulate the movement of the servos positions and set it to a specific rotation point based on how much the joystick is pushed forward/backwards. The servo wires that are connected to the Arduino help the computer read which servo should be moved according to which joystick is moved. The battery ensures that enough voltage is moving through the entire circuit so the robotic arm has enough energy to move freely without having jittery movements. 
 
-## Challenges
+### Challenges
 There were a significant amount of challenges during this process, including issues in the electrical, mechnical, software, and power areas. When the provided code was uploaded, the robotic arm would go haywire and move entirely on its own without any prompting from the controller. We hoped that this meant it was a software issue, and rewrote the code from scratch to have a simpler way to control the arm. However, when that wasn't enough, we tried to isolate the movement of each individual servo to check if there were any faulty or broken ones that were attached. We found that servo 2 was broken, and replaced it with another servo, yet that one was also considerably weak and could not support the weight of the upper arm, and ended up replacing it a second time before it finally worked. There were also issues with loose jumper wires, which meant replacing and reiterating the wiring for both the servos and the joycon. There was also issues with the battery pack, due to it being plugged in for extensive periods of time, the voltage considerably lowered and became very weak, which meant replacing the batteries as well and being mindul of how long it is being used. While there were issues in each of these categories, eventually I was able to power through these challenges and create a working controller for my robotic arm. 
 
-## Next Steps
+### Next Steps
 My next steps are to code the app which will also be able to control the robotic arm.
 
 
@@ -67,13 +67,13 @@ My next steps are to code the app which will also be able to control the robotic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HHfXIwpPmhg?si=Wacx0CLeuHc3H47H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Description
+### Description
 For my main project, my first milestone was to assemble and build the components of my robotic arm, which includes the structure of the arm itself and the 2-joystick controller. I chose this project primarily because of its significance and symbolism of the many advancements in the robotics field and its usefulness in medical areas. These inventions have been influential to so many people and I wanted to experience what it would be like to create a simpler version of a prosthetic arm. This project is also the perfect difficulty level as it is not too hard but enough to challenge me in the right areas and expand my skill set. There are three main components to this project: the battery pack, the Arduino Nano board, and the structure of the arm itself. The battery pack is used to power the arm since it cannot function from the power provided by the computer alone. The Arduino Nano board is what facilitates communication between the computer and the arm + controller, which is how the arm is able to read code and able to move specific joints based on commands from the controller. The robotic arm has 4 main points of movement: the turning table on the bottom, the two joints on the arm, and the opening/closing of the claw at the top. 
 
-## Challenges
+### Challenges
 Some challenges I had was finding and alternate design solution for my battery pack, since it was much wider than the one initally provided so I would not be able to screw it in the traditional way. Instead, we decided to use velcro tape to stick the battery pack onto the edge of the base plate. Another challenge I faced was installing the servo bracket onto the MG90 servo, since I made the mistake of installing it last which caused problems due to the limited space for my screwdriver to secure the bracket in place. However, after much struggle, I was able to fix it in place and it is able to work and function smoothly. 
 
-## Next Steps
+### Next Steps
 My next steps from here are to code the controller to be able to move certain joints depending on the movement and direction of the individual joystick.
  
 
@@ -588,10 +588,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 For my starter project, I chose the BlueStamp Arduino Starter. I have had prior experiences with Arduinos in CS classes I have taken at school, but those have been very software heavy, rather than mechanical or electrical heavy. By choosing this starter, I hoped to gain more knowledge on circuits and Arduinos as a whole since my final project uses them as well, and it would be productive to get familiar with how to build and manage Arduino boards. The board has an input, the button, and an output, the LED. When the button is pressed, a message (taken from the code) is transferred throughout the jumper wires and to the Arduino, which is then passed on to the LED which tells it to turn on, until the button is released which severs the connection. The voltage transmission is regulated and controlled by the resistor which is able to  limit the voltage being passed throughout the circuit so it is not too little or too much. 
 
-## Challenges
+### Challenges
 Some challenges I faced was mounting the proto-sheild onto the Arduino board since the intructions were a bit complicated, and having to solder the two boards together was also a challenge due to the limited space and my limited skill set with soldering. There were also some struggles with the circuit connection between the button and LED. However, after going through each step carefully and thoroughly, I was able to pinpoint the exact problem and where it was coming from, and then able to solve any issues I had. 
 
-## Next Steps
+### Next Steps
 Now that this project is completed, and I have a better understanding of Arduino boards and circuits, I can now start on my final project!
 
 <!--- # Other Resources/Examples
