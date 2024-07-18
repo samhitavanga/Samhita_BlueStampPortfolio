@@ -25,7 +25,7 @@ This Android app for the robotic arm uses a switch system and an orientation sen
 ### Challenges
 There were a significant amount of challenges during this process. I created and tested two different interfaces with different coding approaches before I was able to find something that worked with the arm. For example, in the beginning, there were no switches made and I expected all the servos to run at once while the phone is moving. This caused an overload in data and caused the arm to have jittery movements that burned out the power in the batteries. To solve this, I used switches to have precise movements that the user can predict and control. There was also a debate between whether or not I should use an orientation sensor over an accelerometer. Eventually, I weighed the pros and cons based on my needs and settled on the orientation sensor, which would give my code the data it needs to fully control the arm. Eventually, I was able to get the app working and now it works and pairs smoothly with the robotic arm.
 
-## Next Steps
+### Next Steps
 My next steps are to practice my presentation for Demo Night.
 
 
