@@ -586,6 +586,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Awwvdmpums8?si=MY5cCiRKkaQ0KKCn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+### Description
 For my starter project, I chose the BlueStamp Arduino Starter. I have had prior experiences with Arduinos in CS classes I have taken at school, but those have been very software heavy, rather than mechanical or electrical heavy. By choosing this starter, I hoped to gain more knowledge on circuits and Arduinos as a whole since my final project uses them as well, and it would be productive to get familiar with how to build and manage Arduino boards. The board has an input, the button, and an output, the LED. When the button is pressed, a message (taken from the code) is transferred throughout the jumper wires and to the Arduino, which is then passed on to the LED which tells it to turn on, until the button is released which severs the connection. The voltage transmission is regulated and controlled by the resistor which is able to  limit the voltage being passed throughout the circuit so it is not too little or too much. 
 
 ### Challenges
