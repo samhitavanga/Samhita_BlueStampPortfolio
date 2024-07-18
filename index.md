@@ -11,7 +11,7 @@ This robotic arm has the ability to flex and grab objects around it using the he
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** --->
 <div align="center">
-	<img src="Samhita_V_Project.png" width="235" height="300"> 
+	<img src="Samhita_V_Project.png" width="285" height="350"> 
 </div>
 
 
